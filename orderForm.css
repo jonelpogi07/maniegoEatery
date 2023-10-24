@@ -1,0 +1,62 @@
+/* Background color for the entire form */
+body {
+    background-color: #ffccdd; /* Cute Pink */
+    font-family: 'Comic Sans MS', cursive;
+}
+
+/* Center-align the form */
+.form-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+/* Background color for form groups */
+.form-group {
+    background-color: #fff; /* White */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Center-align the labels and make their background transparent */
+.form-group label {
+    font-size: 15px;
+    color: #ff69b4; /* Hot Pink */
+    text-align: center;
+    background: transparent;
+    width: 200px; /* Set the width of labels */
+    font-family: 'Comic Sans MS', cursive;
+}
+
+/* Input and select styles */
+.form-group input,
+.form-group select {
+    width: 200px; /* Set the width of inputs and selects */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'Comic Sans MS', cursive;
+    transition: background-color 0.3s;
+}
+
+/* Set the background color for inputs and selects when they are focused */
+.form-group input:focus,
+.form-group select:focus {
+    background-color: #b0e0e6; /* Powder Blue */
+}
+
+/* Dropdown option styles */
+.form-group select option {
+    color: #000; /* Black */
+}
+
+/* Submit button styles */
+.form-group input[type="submit"] {
+    background-color: #ff69b4; /* Hot Pink */
+    color: #fff; /* White */
+    cursor: pointer;
+    font-family: 'Comic Sans MS', cursive;
+}

@@ -1,0 +1,10 @@
+/* Background color for the entire form */
+body, h1 {
+    background-color: #ffccdd; /* Cute Pink */
+    font-family: 'Comic Sans MS', cursive;
+}
+
+object {
+    width:100%;
+     height:70vh;
+}   
