@@ -2,46 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width>, initial-scale=1.0">
   <title>Document</title>
-</head>
-<head> 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Form</title>
-  <style>
-      .form-group {
-          display: flex;
-          flex-direction: column;
-          margin-bottom: 15px;
-      }
 
-      .form-group label {
-          font-size: 25px;
-      }
+<link rel="stylesheet" href="ordered.css">
 
-      .form-group input, .form-group select {
-          width: 100%;
-          padding: 5px;
-          border: 1px solid #d1c7c7;
-          border-radius: 15px;
-          text-align:center;/*Center-align input text*/
-      }
+ </head>
+    
 
-      form {
-          margin: 0 auto; /* Center the form horizontally */
-          width: 300px; /* Set the desired width of the form */
-          text-align: center; /* Center-align the form contents */
-      }
 
         
-      
-  </style>
-</head> <center>
+
 <body>
 
+    
+    <div> <center>
+        <image src="images1/foodcover.png" height="300" width="700"> 
+    </div> </center>
+
+
+
+
+<main class="box">
+
       <form action="action_page.php" method="POST">
-          <div style="font-size:15px">
+
+          <div class="areYou">
               <label for="are_you">Are you?</label>
               <label for="Mr.">Mr.</label>
               <input type="radio" id="Mr." name="are_you" value="Mr." required>
@@ -51,29 +37,29 @@
               <input type="radio" id="Mrs." name="are_you" value="Mrs." required>
           </div>
 
-          <div class="form-group">
+          <div class="form-group"><br>
               <label for="fname">First name:</label>
-              <input type="text" id="fname" name="fname" placeholder="Christian" required>
+              <input type="text" id="fname" placeholder="Christian" required>
           </div>
 
-          <div class="form-group">
+          <div class="form-group"><br>
               <label for="lname">Last name:</label>
-              <input type="text" id="lname" name "lname" placeholder="Visda" required>
+              <input type="text" id="lname" placeholder="Visda" required>
           </div>
 
-          <div class="form-group">
-              <label for="mobile">Mobile #:</label>
-              <input type="tel" id="mobile" name="mobile" minlength="11" maxlength="11" placeholder="(+639)48-863-6488" required>
+          <div class="form-group"><br>
+              <label for="phone">Phone #:</label>
+              <input type="tel" id="phone" placeholder="(09)48-863-6488" required minlength="11" maxlength="11" >
           </div>
 
-          <div class="form-group">
+          <div class="form-group"><br>
               <label for="dname">Delivery address:</label>
-              <input type="text" id="dname" name="dname" placeholder="Blk63, lot72 San Roque" required>
+              <input type="text" id="dname" placeholder="Blk63, lot72 San Roque" required>
           </div>
 
-          <div class="form-group">
+          <div class="form-group"><br>
               <label for="paymentmethod">Payment Method:</label>
-              <select id="paymentmethod" name="paymentmethod">
+              <select id="paymentmethod">
                   <option value="Cash on Delivery">Cash on Delivery</option>
                   <option value="Gcash">Gcash</option>
                   <option value="Maya">Maya</option>
@@ -82,15 +68,16 @@
               </select>
           </div>
 
-          <div class="form-group">
+          <div class="form-group"><br>
               <label for="vcode">Voucher Code:</label>
-              <input type="text" id="vcode" name="vcode" maxlength="6" placeholder="123456">
+              <input type="text" id="vcode" maxlength="6" placeholder="123456">.
           </div>
 
-          <div class="form-group">
+          <div class="form-group"><br>
               <input type="submit">
           </div>
-      </form>
-  
+      </form>       
+    </main>
+
 </body>
 </html>

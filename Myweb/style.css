@@ -1,0 +1,39 @@
+
+header {
+  background-color: white;
+}
+
+
+h1{
+   font-size:75px; font-style: italic;
+  text-shadow: 4px 4px 5px  hsl(0, 100%, 50%),-4px -4px 5px  hsl(202, 100%, 49%)
+}
+
+main{
+    background-image:url(Images1/place.jpg);
+    background-size :cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-blend-mode: hard-light ;
+    display: inline,block
+}
+
+
+
+
+
+#span2{ color:red;
+}
+
+#foot1{
+  background-color: lightgray;
+  text-align:center
+}
+h3{
+  color:crimson
+}
+
+.cssProperty{
+  width:200px ;
+  height:150px ;
+}
