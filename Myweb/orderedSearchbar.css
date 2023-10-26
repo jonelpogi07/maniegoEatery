@@ -1,0 +1,25 @@
+
+.searh-container{
+  display:flex ;
+  justify-content:center ;
+  margin-top:20px;
+  padding:10px
+}
+
+.search-input{
+  padding: 10px;
+  border: 1px solid #ccc ;
+  border-radius: 5px;
+  width:600px ;
+  margin-top: auto;
+
+}
+.search-button{
+  background-color: whitesmoke;
+  color:black ;
+  border : 5px ;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}

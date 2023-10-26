@@ -1,0 +1,42 @@
+
+.box{
+  width: 320px;
+  height: 700px;
+  background-color: whitesmoke;
+  border: 2px ;
+  padding:10px;
+  text-align: left;
+
+}
+
+body{
+  background-color: pink;
+}
+
+
+
+.areYou{
+  background-color: aqua;
+}
+
+
+.form-group label {
+  font-size: 25px;
+  border-radius: 15px;
+  font-style: italic;
+}
+
+.form-group input, .form-group select {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #d1c7c7;
+  background-color: aqua;
+  text-align:center;
+}
+
+form {
+
+  width: 300px;
+  text-align: center;
+}
+
