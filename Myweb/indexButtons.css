@@ -1,6 +1,21 @@
 .buttons{
-  background-color:blue; color:palevioletred; 
+  font-style:oblique;
+  background-color:whitesmoke; color:black; 
   border-radius: 8px;
   width: 100px;
  }
- 
+
+ .cssProperty{
+  width:200px ;
+  height:150px ;
+}
+ .buttons:hover{
+  font-size : 15px ;
+  background-color: hsla(240, 92%, 59%, 0.836)
+
+ }
+
+ .buttons:active{
+  font-size : 15px ;
+  background-color: red;
+ }
