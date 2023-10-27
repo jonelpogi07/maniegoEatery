@@ -1,0 +1,57 @@
+
+  body{
+  background-color: pink;
+  margin-top:0px;
+
+  }
+
+  .form-container{
+    display: flex;
+    justify-content:flex-start;
+    
+  }
+
+  .areYou {
+    display: flex;
+    padding: 10px;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .form-group label {
+      font-size: 15px;
+      color: #ff69b4;
+      text-align: center;
+      background: transparent;
+      width: 200px;
+      font-family: 'Comic Sans MS';
+  }
+
+  .form-group input,
+  .form-group select {
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'Comic Sans MS', cursive;
+    transition: background-color 0.3s;
+  }
+
+  .form-group input:focus,
+  .form-group select:focus {
+    background-color: #b0e0e6;
+  }
+
+ 
+
+  .form-group input[type="submit"] {
+    background-color: #ff69b4; /* Hot Pink */
+    color: #fff; /* White */
+    cursor: pointer;
+    font-family: 'Comic Sans MS', cursive ;
+  }
