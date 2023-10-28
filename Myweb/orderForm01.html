@@ -1,83 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width>, initial-scale=1.0">
-  <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="orderForm01.css" />
+  </head>
+  <body>
+    <div>
+      <center>
+        <img
+          src="images1/foodcover.png"
+          height="300"
+          width="700"
+          alt="Food Cover"
+        />
+      </center>
+    </div>
 
-<link rel="stylesheet" href="orderForm01.css">
-
- </head>
-    
-
-
-        
-
-<body>
-
-    
-    <div> <center>
-        <image src="images1/foodcover.png" height="300" width="700"> 
-    </div> </center>
-
-
-
-
-<main class="box">
-
+    <main class="box">
       <form action="action_page.php" method="POST">
-
-          <div class="areYou">
-              <label for="are_you">Are you?</label>
-              <label for="Mr.">Mr.</label>
-              <input type="radio" id="Mr." name="are_you" value="Mr." required>
-              <label for="Ms.">Ms.</label>
-              <input type="radio" id="Ms." name="are_you" value="Ms." required>
-              <label for="Mrs.">Mrs.</label>
-              <input type="radio" id="Mrs." name="are_you" value="Mrs." required>
-          </div>
-
-          <div class="form-group"><br>
-              <label for="fname">First name:</label>
-              <input type="text" id="fname" placeholder="Christian" required>
-          </div>
-
-          <div class="form-group"><br>
-              <label for="lname">Last name:</label>
-              <input type="text" id="lname" placeholder="Visda" required>
-          </div>
-
-          <div class="form-group"><br>
-              <label for="phone">Phone #:</label>
-              <input type="tel" id="phone" placeholder="(09)48-863-6488" required minlength="11" maxlength="11" >
-          </div>
-
-          <div class="form-group"><br>
-              <label for="dname">Delivery address:</label>
-              <input type="text" id="dname" placeholder="Blk63, lot72 San Roque" required>
-          </div>
-
-          <div class="form-group"><br>
-              <label for="paymentmethod">Payment Method:</label>
-              <select id="paymentmethod">
-                  <option value="Cash on Delivery">Cash on Delivery</option>
-                  <option value="Gcash">Gcash</option>
-                  <option value="Maya">Maya</option>
-                  <option value="Debit Card">Debit Card</option>
-                  <option value="Gift Card">Gift Card</option>
-              </select>
-          </div>
-
-          <div class="form-group"><br>
-              <label for="vcode">Voucher Code:</label>
-              <input type="text" id="vcode" maxlength="6" placeholder="123456">.
-          </div>
-
-          <div class="form-group"><br>
-              <input type="submit">
-          </div>
-      </form>       
+        <div class="areYou">
+          <label for="are_you">Are you?</label>
+          <label for="Mr.">Mr.</label>
+          <input type="radio" id="Mr." name="are_you" value="Mr." required />
+          <label for="Ms.">Ms.</label>
+          <input type="radio" id="Ms." name="are_you" value="Ms." required />
+          <label for="Mrs.">Mrs.</label>
+          <input type="radio" id="Mrs." name="are_you" value="Mrs." required />
+        </div>
+        <div class="form-group">
+          <label for="fname">First name:</label>
+          <input type="text" id="fname" placeholder="Christian" required />
+        </div>
+        <div class="form-group">
+          <label for="lname">Last name:</label>
+          <input type="text" id="lname" placeholder="Visda" required />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone #:</label>
+          <input
+            type="tel"
+            id="phone"
+            placeholder="(09)48-863-6488"
+            required
+            minlength="11"
+            maxlength="11"
+          />
+        </div>
+        <div class="form-group">
+          <label for="dname">Delivery address:</label>
+          <input
+            type="text"
+            id="dname"
+            placeholder="Blk63, lot72 San Roque"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="paymentmethod">Payment Method:</label>
+          <select id="paymentmethod">
+            <option value="Cash on Delivery">Cash on Delivery</option>
+            <option value="Gcash">Gcash</option>
+            <option value="Maya">Maya</option>
+            <option value="Debit Card">Debit Card</option>
+            <option value="Gift Card">Gift Card</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="vcode">Voucher Code:</label>
+          <input type="text" id="vcode" maxlength="6" placeholder="123456" />
+        </div>
+        <div class="form-group">
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
     </main>
-
-</body>
+  </body>
 </html>

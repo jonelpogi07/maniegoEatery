@@ -10,17 +10,13 @@ h1{
 }
 
 main{
-    background-image:url(Images1/place.jpg);
+    background-image:url(images1/place.jpg);
     background-size :cover;
     background-repeat:no-repeat;
     background-position:center;
     background-blend-mode: hard-light ;
     display: inline,block
 }
-
-
-
-
 
 #span2{ color:red;
 }

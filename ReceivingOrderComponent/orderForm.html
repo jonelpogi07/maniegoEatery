@@ -1,65 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
-    <link rel="stylesheet" type="text/css" href="orderForm.css">
-</head>
-<body>
+    <link rel="stylesheet" type="text/css" href="orderForm.css" />
+  </head>
+  <body>
     <div class="form-container">
-        <form action="Myweb/index.html" method="POST">
-            <div class="form-group">
-                <label for="are_you">Are You?</label>
-                <select id="are_you" name="are_you" required>
-                    <option value="" style="display: none;">Select an option</option>
-                    <option value="Mr.">Mr.</option>
-                    <option value="Ms.">Ms.</option>
-                    <option value="Mrs.">Mrs.</option>
-                </select>
-            </div>
+      <form action="Myweb/index.html" method="POST">
+        <div class="form-group">
+          <label for="are_you">Are You?</label>
+          <select id="are_you" name="are_you" required>
+            <option value="" style="display: none">Select an option</option>
+            <option value="Mr.">Mr.</option>
+            <option value="Ms.">Ms.</option>
+            <option value="Mrs.">Mrs.</option>
+          </select>
+        </div>
 
-            <div class="form-group">
-                <label for="fname">First Name:</label>
-                <input type="text" id="fname" name="fname" placeholder="Christian" required>
-            </div>
+        <div class="form-group">
+          <label for="fname">First Name:</label>
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            placeholder="Christian"
+            required
+          />
+        </div>
 
-            <div class="form-group">
-                <label for="lname">Last Name:</label>
-                <input type="text" id="lname" name="lname" placeholder="Visda" required>
-            </div>
+        <div class="form-group">
+          <label for="lname">Last Name:</label>
+          <input
+            type="text"
+            id="lname"
+            name="lname"
+            placeholder="Visda"
+            required
+          />
+        </div>
 
-            <div class="form-group">
-                <label for="mobile">Mobile #:</label>
-                <input type="tel" id="mobile" name="mobile" minlength="11" maxlength="11" placeholder="(+639)48-863-6488" required>
-            </div>
+        <div class="form-group">
+          <label for="mobile">Mobile #:</label>
+          <input
+            type="tel"
+            id="mobile"
+            name="mobile"
+            minlength="11"
+            maxlength="11"
+            placeholder="(+639)48-863-6488"
+            required
+          />
+        </div>
 
-            <div class="form-group">
-                <label for="dname">Delivery Address:</label>
-                <input type="text" id="dname" name="dname" placeholder="Blk63, lot72 San Roque" required>
-            </div>
+        <div class="form-group">
+          <label for="dname">Delivery Address:</label>
+          <input
+            type="text"
+            id="dname"
+            name="dname"
+            placeholder="Blk63, lot72 San Roque"
+            required
+          />
+        </div>
 
-            <div class="form-group">
-                <label for="paymentmethod">Payment Method:</label>
-                <select id="paymentmethod" name="paymentmethod">
-                    <option value="" style="display: none;">Select an option</option>
-                    <option value="Cash on Delivery">Cash on Delivery</option>
-                    <option value="Gcash">Gcash</option>
-                    <option value="Maya">Maya</option>
-                    <option value="Debit Card">Debit Card</option>
-                    <option value="Gift Card">Gift Card</option>
-                </select>
-            </div>
+        <div class="form-group">
+          <label for="paymentmethod">Payment Method:</label>
+          <select id="paymentmethod" name="paymentmethod">
+            <option value="" style="display: none">Select an option</option>
+            <option value="Cash on Delivery">Cash on Delivery</option>
+            <option value="Gcash">Gcash</option>
+            <option value="Maya">Maya</option>
+            <option value="Debit Card">Debit Card</option>
+            <option value="Gift Card">Gift Card</option>
+          </select>
+        </div>
 
-            <div class="form-group">
-                <label for="vcode">Voucher Code:</label>
-                <input type="text" id="vcode" name="vcode" maxlength="6" placeholder="123456">
-            </div>
+        <div class="form-group">
+          <label for="vcode">Voucher Code:</label>
+          <input
+            type="text"
+            id="vcode"
+            name="vcode"
+            maxlength="6"
+            placeholder="123456"
+          />
+        </div>
 
-            <div class="form-group">
-                <input type="submit">
-            </div>
-        </form>
+        <div class="form-group">
+          <input type="submit" />
+        </div>
+      </form>
     </div>
-</body>
+  </body>
 </html>
