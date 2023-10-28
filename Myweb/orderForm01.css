@@ -1,4 +1,3 @@
-
 .box{
   width: 320px;
   height: 700px;
@@ -13,12 +12,9 @@ body{
   background-color: pink;
 }
 
-
-
 .areYou{
   background-color: aqua;
 }
-
 
 .form-group label {
   font-size: 25px;
