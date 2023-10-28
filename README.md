@@ -1,4 +1,4 @@
 # maniegoEatery
 
 
-https://jonelpogi07.github.io/maniegoEatery/MyWeb/index.html
+https://jonelpogi07.github.io/maniegoEatery/Myweb/index.html
