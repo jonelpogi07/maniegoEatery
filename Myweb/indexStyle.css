@@ -10,7 +10,7 @@ h1{
 }
 
 main{
-    background-image:url(images1/place.jpg);
+    background-image:url("images1/place.jpg");
     background-size :cover;
     background-repeat:no-repeat;
     background-position:center;
