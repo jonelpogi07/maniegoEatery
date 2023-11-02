@@ -3,10 +3,14 @@
   <head>
     <title>The Canteen</title>
     <link rel="stylesheet" href="indexstyle.css" />
-    <link rel="stylesheet" href="indexButtons.css" />
+    
   </head>
 
   <body>
+
+  <scipt src="index.js"></scipt>
+
+
     <header>
       <center>
         <img src="images1/canteenbanner.jpg" height="200" width="1200" />
@@ -78,37 +82,56 @@
         </tr>
         <tr align="center">
           <td>
-            <a href="orderedReceive.html" target="_self">
-              <button class="buttons">Click to Order</button>
-            </a>
+              <button 
+              onclick="updateDropdown
+              ('orderedReceive.html', 'ChickenAdobo')
+              " class="buttons">
+              Click to Order</button>
           </td>
+
           <td>
-            <a href="orderedReceive.html" target="_self">
-              <button class="buttons">Click to Order</button>
-            </a>
+              <button 
+              onclick="updateDropdown
+              ('orderedReceive.html', 'Chopsuey')
+              " class="buttons">
+              Click to Order</button> 
           </td>
+
           <td>
-            <a href="orderedReceive.html" target="_self">
-              <button class="buttons">Click to Order</button>
-            </a>
+              <button 
+              onclick="updateDropdown
+              ('orderedReceive.html', 'Caldereta')
+              " class="buttons">
+              Click to Order</button>
           </td>
+
           <td>
-            <a href="orderedReceive.html" target="_self">
-              <button class="buttons">Click to Order</button>
-            </a>
+              <button 
+              onclick="updateDropdown
+              ('orderedReceive.html', 'Nilagang Manok')
+              " class="buttons">
+              Click to Order</button>
           </td>
+
           <td>
-            <a href="orderedReceive.html" target="_self">
-              <button class="buttons">Click to Order</button>
-            </a>
+              <button 
+              onclick="updateDropdown
+              ('orderedReceive.html', 'Lugaw w/ Egg')
+              " class="buttons">
+              Click to Order</button>
           </td>
+          
           <td>
-            <a href="orderedReceive.html" target="_self">
-              <button class="buttons">Click to Order</button>
-            </a>
+              <button 
+              onclick="updateDropdown
+              ('orderedReceive.html', 'Turon ni Sharon')
+              " class="buttons">
+              Click to Order</button>
           </td>
         </tr>
       </table>
+
+    
 
       <br />
 
@@ -185,37 +208,56 @@
         </tr>
         <tr align="center">
           <td>
-            <a href="orderedReceive.html" target="_self">
-              <button class="buttons">Click to Order</button>
-            </a>
+            <button 
+            onclick="updateDropdown
+            ('orderedReceive.html', 'Tokwa`t Baboy ')
+            " class="buttons">
+            Click to Order</button>
           </td>
           <td>
-            <a href="orderedReceive.html" target="_self">
-              <button class="buttons">Click to Order</button>
-            </a>
+            <button 
+              onclick="updateDropdown
+              ('orderedReceive.html', 'Sinigang na Hiponn')
+              " class="buttons">
+              Click to Order</button>
           </td>
           <td>
-            <a href="orderedReceive.html" target="_self">
-              <button class="buttons">Click to Order</button>
-            </a>
+            <button 
+              onclick="updateDropdown
+              ('orderedReceive.html', 'Chicharon Bulaklak')
+              " class="buttons">
+              Click to Order</button>
           </td>
           <td>
-            <a href="orderedReceive.html" target="_self">
-              <button class="buttons">Click to Order</button>
-            </a>
+            <button 
+              onclick="updateDropdown
+              ('orderedReceive.html', 'Chicken Inasal ')
+              " class="buttons">
+              Click to Order</button>
           </td>
           <td>
-            <a href="orderedReceive.html" target="_self">
-              <button class="buttons">Click to Order</button>
-            </a>
+            <button 
+              onclick="updateDropdown
+              ('orderedReceive.html', 'Kare-Kare')
+              " class="buttons">
+              Click to Order</button>
           </td>
           <td>
-            <a href="orderedReceive.html" target="_self">
-              <button class="buttons">Click to Order</button>
-            </a>
+            <button 
+            onclick="updateDropdown
+            ('orderedReceive.html', 'Shanghai')
+            " class="buttons">
+            Click to Order</button>
           </td>
         </tr>
       </table>
+
+
+      <script>
+        function updateDropdown(targetPage, selectedOption){
+          window.location.href = targetPage + "?selectedOption=" + selectedOption;
+        }
+      </script>
 
       <br /><br /><br />
 

@@ -16,6 +16,7 @@
   }
 
   .form-group {
+    background-color: #fff;
     display: flex;
     flex-direction: column;
     padding: 10px;
