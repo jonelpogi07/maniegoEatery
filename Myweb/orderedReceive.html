@@ -9,7 +9,7 @@
   </head>
 
   <body>
-    <div class="for-container">
+    <div class="form-container">
       <form action="action_page.php" method="POST">
         <div class="areYou">
           <label for="are_you">Are you?</label>
@@ -66,8 +66,16 @@
 
         <div class="form-group">
           <label for="vcode">Voucher Code:</label>
-          <input type="text" id="vcode" maxlength="6" placeholder="123456" />.
+          <input type="text" id="vcode" maxlength="6" placeholder="123456" />
         </div>
+
+        <div class="form-group">
+          <label for="confirmOrder"> Please Confirm your Order:</label>
+          <select id="dropdown">
+          </select>
+        
+        </div>
+        
 
         <div class="form-group">
           <input type="submit" />
@@ -75,4 +83,39 @@
       </form>
     </div>
   </body>
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const selectedOption = urlParams.get("selectedOption");
+  
+    
+      const options = [
+        "ChickenAdobo",
+        "Chopsuey",
+        "Caldereta",
+        "Nilagang Manok",
+        "Lugaw w/ Egg",
+        "Turon ni Sharon",
+        "Tokwa`t Baboy",
+        "Sinigang na Hipon",
+        "Chicharon Bulaklak",
+        "Chicken Inasal",
+        "Kare-Kare",
+        "Shanghai",
+
+      ];
+
+    const dropdown = document.getElementById("dropdown");
+  
+    options.forEach(option => {
+      const optionElement = document.createElement("option");
+      optionElement.value = option;
+      optionElement.textContent = option;
+  
+      if (option === selectedOption) {
+        optionElement.selected = true;
+      }
+  
+      dropdown.appendChild(optionElement);
+    });
+  </script>
 </html>
