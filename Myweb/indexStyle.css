@@ -31,9 +31,10 @@ h3{
 
 .buttons{
   font-style:oblique;
-  background-color:whitesmoke; color:black; 
+  background-color:whitesmoke; color:red; 
   border-radius: 8px;
   width: 100px;
+  cursor: pointer;
  }
 
  .cssProperty{

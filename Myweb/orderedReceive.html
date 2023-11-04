@@ -70,52 +70,88 @@
         </div>
 
         <div class="form-group">
-          <label for="confirmOrder"> Please Confirm your Order:</label>
-          <select id="dropdown">
+          <label for="confirmOrder">Please Confirm your Order:</label>
+          <select id="dropdown" onchange="changeBackground()">
+            <option value="ChickenAdobo">Chicken Adobo</option>
+            <option value="Chopsuey">Chopsuey</option>
+            <option value="Caldereta">Caldereta</option>
+            <option value="NilagangManok">Nilagang Manok</option>            
+            <option value="Lugaww/Egg">Lugaw w/ Egg</option>            
+            <option value="TuronniSharon">Turon ni Sharon</option>            
+            <option value="TokwatBaboy">Tokwa't Baboy</option>            
+            <option value="SinigangnaHipon">Sinigang na Hipon</option>            
+            <option value="ChicharonBulaklak">Chicharon Bulaklak</option>            
+            <option value="ChickenInasal">Chicken Inasal</option>            
+            <option value="KareKare">Kare-Kare</option> 
+            <option value="Shanghai">Shanghai</option>                
           </select>
-        
         </div>
-        
-
+      
         <div class="form-group">
           <input type="submit" />
         </div>
-      </form>
-    </div>
-  </body>
-  <script>
-    const urlParams = new URLSearchParams(window.location.search);
-    const selectedOption = urlParams.get("selectedOption");
-  
-    
-      const options = [
-        "ChickenAdobo",
-        "Chopsuey",
-        "Caldereta",
-        "Nilagang Manok",
-        "Lugaw w/ Egg",
-        "Turon ni Sharon",
-        "Tokwa`t Baboy",
-        "Sinigang na Hipon",
-        "Chicharon Bulaklak",
-        "Chicken Inasal",
-        "Kare-Kare",
-        "Shanghai",
+      </body>
+      <script>
+        function changeBackground() {
+          const dropdown = document.getElementById("dropdown");
+          const selectedOption = dropdown.value;
+          updateBackgroundImage(selectedOption);
+        }
+      
+        function updateBackgroundImage(selectedOption) {
+          const backgroundContainer = document.body;
+          switch (selectedOption) {
+            case "ChickenAdobo":
+              backgroundContainer.style.backgroundImage = "url('Images1/chickenAdobo.png')";
+              break;
+            case "Chopsuey":
+              backgroundContainer.style.backgroundImage = "url('images1/chopsuey.jpg')";
+              break;
+              case "Caldereta":
+              backgroundContainer.style.backgroundImage = "url('images1/caldereta.jpg')";
+              break;
+              case "NilagangManok":
+              backgroundContainer.style.backgroundImage = "url('images1/nilagangManok.jpg')";
+              break;
+              case "Lugaww/Egg":
+              backgroundContainer.style.backgroundImage = "url('images1/lugaw.jpg')";
+              break;
+              case "TuronniSharon":
+              backgroundContainer.style.backgroundImage = "url('Images1/turon.jpg')";
+              break;
+              case "TokwatBaboy":
+              backgroundContainer.style.backgroundImage = "url('Images1/tokwatBaboy.jpg')";
+              break;
+              case "SinigangnaHipon":
+              backgroundContainer.style.backgroundImage = "url('Images1/sinigangHipon.jpg')";
+              break;
+              case "ChicharonBulaklak":
+              backgroundContainer.style.backgroundImage = "url('Images1/chicharon.jpg')";
+              break;
+              case "ChickenInasal":
+              backgroundContainer.style.backgroundImage = "url('Images1/chickenInasal.jpg')";
+              break;
+              case "KareKare":
+              backgroundContainer.style.backgroundImage = "url('Images1/karekare.jpg')";
+              break;
+              case "Shanghai":
+              backgroundContainer.style.backgroundImage = "url('Images1/shanghai.jpg')";
+              break;
 
-      ];
-
-    const dropdown = document.getElementById("dropdown");
-  
-    options.forEach(option => {
-      const optionElement = document.createElement("option");
-      optionElement.value = option;
-      optionElement.textContent = option;
-  
-      if (option === selectedOption) {
-        optionElement.selected = true;
+        }
       }
+            
+        
+        const urlParams = new URLSearchParams(window.location.search);
+        const selectedOption = urlParams.get("selectedOption");
+      
+        
+        const dropdown = document.getElementById("dropdown");
+        dropdown.value = selectedOption || "Chicken Adobo"; 
+      
   
-      dropdown.appendChild(optionElement);
-    });
-  </script>
+        if (selectedOption) {
+          updateBackgroundImage(selectedOption);
+        }
+      </script>
 </html>
