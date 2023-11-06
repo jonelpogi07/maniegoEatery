@@ -20,6 +20,24 @@
     </header>
 
     <main>
+        <center>
+        <button
+          onclick="updateDropdown
+          ('orderedReceive.html', 'Nilagang Manok')
+          "
+          class="buttons"
+        >
+          <p>Favorites <i class="fa-solid fa-heart"></i></p>
+        </button>
+          <button
+            onclick="updateDropdown
+            ('orderedReceive.html', 'Nilagang Manok')
+            "
+            class="buttons"
+          >
+            <p>Drinks <i class="fa-solid fa-champagne-glasses"></i></p>
+          </button>
+        </center>
       <table width="1200" align="center">
         <tr>
           <td>
@@ -84,8 +102,13 @@
         <tr align="center">
           <td>
             <button
+<<<<<<< HEAD
               onclick="updatePage
               ('orderedReceive.html', 'ChickenAdobo', 'Images1/chickenAdobo.png')
+=======
+              onclick="updateDropdown
+              ('orderedReceive.html', 'ChickenAdobo')
+>>>>>>> a55660f18be23986db43298d96247932d9edefad
               "
               class="buttons"
             >
@@ -95,8 +118,13 @@
 
           <td>
             <button
+<<<<<<< HEAD
               onclick="updatePage
               ('orderedReceive.html', 'Chopsuey', 'Images1/chopsuey.jpg')
+=======
+              onclick="updateDropdown
+              ('orderedReceive.html', 'Chopsuey')
+>>>>>>> a55660f18be23986db43298d96247932d9edefad
               "
               class="buttons"
             >
@@ -106,8 +134,13 @@
 
           <td>
             <button
+<<<<<<< HEAD
               onclick="updatePage
               ('orderedReceive.html', 'Caldereta', 'Images1/caldereta.jpg')
+=======
+              onclick="updateDropdown
+              ('orderedReceive.html', 'Caldereta')
+>>>>>>> a55660f18be23986db43298d96247932d9edefad
               "
               class="buttons"
             >
@@ -117,8 +150,13 @@
 
           <td>
             <button
+<<<<<<< HEAD
               onclick="updatePage
               ('orderedReceive.html', 'NilagangManok', 'Images1/nilagangManok.jpg')
+=======
+              onclick="updateDropdown
+              ('orderedReceive.html', 'Nilagang Manok')
+>>>>>>> a55660f18be23986db43298d96247932d9edefad
               "
               class="buttons"
             >
@@ -128,8 +166,13 @@
 
           <td>
             <button
+<<<<<<< HEAD
               onclick="updatePage
               ('orderedReceive.html', 'Lugaww/Egg', 'Images1/lugaw.jpg')
+=======
+              onclick="updateDropdown
+              ('orderedReceive.html', 'Lugaw w/ Egg')
+>>>>>>> a55660f18be23986db43298d96247932d9edefad
               "
               class="buttons"
             >
@@ -139,8 +182,13 @@
 
           <td>
             <button
+<<<<<<< HEAD
               onclick="updatePage
               ('orderedReceive.html', 'TuronniSharon', 'Images1/turon.jpg')
+=======
+              onclick="updateDropdown
+              ('orderedReceive.html', 'Turon ni Sharon')
+>>>>>>> a55660f18be23986db43298d96247932d9edefad
               "
               class="buttons"
             >
@@ -226,8 +274,13 @@
         <tr align="center">
           <td>
             <button
+<<<<<<< HEAD
               onclick="updatePage
             ('orderedReceive.html', 'TokwatBaboy', 'Images1/tokwatBaboy.jpg')
+=======
+              onclick="updateDropdown
+            ('orderedReceive.html', 'Tokwa`t Baboy ')
+>>>>>>> a55660f18be23986db43298d96247932d9edefad
             "
               class="buttons"
             >
@@ -236,8 +289,13 @@
           </td>
           <td>
             <button
+<<<<<<< HEAD
               onclick="updatePage
               ('orderedReceive.html', 'SinigangnaHipon', 'Images1/sinigangHipon.jpg')
+=======
+              onclick="updateDropdown
+              ('orderedReceive.html', 'Sinigang na Hiponn')
+>>>>>>> a55660f18be23986db43298d96247932d9edefad
               "
               class="buttons"
             >
@@ -246,8 +304,13 @@
           </td>
           <td>
             <button
+<<<<<<< HEAD
               onclick="updatePage
               ('orderedReceive.html', 'ChicharonBulaklak', 'Images1/chicharon.jpg')
+=======
+              onclick="updateDropdown
+              ('orderedReceive.html', 'Chicharon Bulaklak')
+>>>>>>> a55660f18be23986db43298d96247932d9edefad
               "
               class="buttons"
             >
@@ -256,8 +319,13 @@
           </td>
           <td>
             <button
+<<<<<<< HEAD
               onclick="updatePage
               ('orderedReceive.html', 'ChickenInasal', 'Images1/chickenInasal.jpg')
+=======
+              onclick="updateDropdown
+              ('orderedReceive.html', 'Chicken Inasal ')
+>>>>>>> a55660f18be23986db43298d96247932d9edefad
               "
               class="buttons"
             >
@@ -266,8 +334,13 @@
           </td>
           <td>
             <button
+<<<<<<< HEAD
               onclick="updatePage
               ('orderedReceive.html', 'KareKare', 'Images1/karekare.jpg')
+=======
+              onclick="updateDropdown
+              ('orderedReceive.html', 'Kare-Kare')
+>>>>>>> a55660f18be23986db43298d96247932d9edefad
               "
               class="buttons"
             >
@@ -276,8 +349,13 @@
           </td>
           <td>
             <button
+<<<<<<< HEAD
               onclick="updatePage
             ('orderedReceive.html', 'Shanghai', 'Images1/shanghai.jpg')
+=======
+              onclick="updateDropdown
+            ('orderedReceive.html', 'Shanghai')
+>>>>>>> a55660f18be23986db43298d96247932d9edefad
             "
               class="buttons"
             >
@@ -288,11 +366,17 @@
       </table>
 
       <script>
+<<<<<<< HEAD
         function updatePage(targetPage, selectedOption, backgroundImage) {
           const queryParams = new URLSearchParams();
           queryParams.set("selectedOption", encodeURIComponent(selectedOption));
           queryParams.set("backgroundImage", backgroundImage);
           window.location.href = targetPage + "?" + queryParams.toString();
+=======
+        function updateDropdown(targetPage, selectedOption) {
+          window.location.href =
+            targetPage + "?selectedOption=" + selectedOption;
+>>>>>>> a55660f18be23986db43298d96247932d9edefad
         }
       </script>
 
