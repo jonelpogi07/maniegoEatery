@@ -91,6 +91,8 @@
           <input type="submit" />
         </div>
       </body>
+
+
       <script>
         function changeBackground() {
           const dropdown = document.getElementById("dropdown");
@@ -136,22 +138,21 @@
               break;
               case "Shanghai":
               backgroundContainer.style.backgroundImage = "url('Images1/shanghai.jpg')";
-              break;
+              break; }
 
-        }
-      }
-            
-        
-        const urlParams = new URLSearchParams(window.location.search);
-        const selectedOption = urlParams.get("selectedOption");
+    } 
+      const urlParams = new URLSearchParams(window.location.search);
+      const selectedOption = urlParams.get("selectedOption");
       
         
-        const dropdown = document.getElementById("dropdown");
-        dropdown.value = selectedOption || "Chicken Adobo"; 
+      const dropdown = document.getElementById("dropdown");
+            dropdown.value = selectedOption || "Chicken Adobo"; 
       
   
-        if (selectedOption) {
+          if (selectedOption) {
           updateBackgroundImage(selectedOption);
-        }
+    }
+
+                
       </script>
 </html>
