@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.sidebar h2{
+  font-size: 80px;
+  margin: 0px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: hsl(305, 100%, 75%);
+}
+
+.sidebar {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  padding-top: 20px;
+}
+
+.sidebar a {
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.sidebar a:hover {
+  background-color: hsl(305, 96%, 78%);
+}
+
+.content {
+  margin-left: 250px; /* Adjust this value to match the width of the sidebar */
+  padding: 20px;
+}
+
+/* Optional: Style for heading and paragraph in content */
+.content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 18px;
+  line-height: 1.6;
+}
