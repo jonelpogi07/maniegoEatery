@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add Item to Inventory</title>
+  <link rel="stylesheet" href="receiving.css">
+</head>
+<body>
+  
+  <div class="buttons">
+    <a href="homePage.html">
+      <button id="backButton">Back to Home</button>
+    </a>
+  </div>
+  <div class="buttons">
+    <button id="formButton" onclick="openForm()">
+      Open Form
+    </button>
+  </div>
+
+  <div class="overlay" id="overlay">
+    <div class="form-popup" id="addForm">
+      <h2>Add Item to Inventory</h2>
+      <form id="addItemForm" onsubmit="addItem(event)">
+        <label for="itemName">Item Name:</label>
+        <input type="text" id="itemName" name="itemName" required>
+
+        <label for="lotNo">Lot No:</label>
+        <input type="text" id="lotNo" name="lotNo" required>
+
+        <label for="deliveryNumber">Delivery Number:</label>
+        <input type="number" id="deliveryNumber" name="deliveryNumber" required>
+
+        <label for="dateReceived">Date Received:</label>
+        <input type="date" id="dateReceived" name="dateReceived" required>
+
+        <label for="itemQuantity">Quantity:</label>
+        <input type="number" id="itemQuantity" name="itemQuantity" required>
+
+        <button type="submit">Add Item</button>
+        <button type="button" onclick="closeForm()">Close</button>
+      </form>
+    </div>
+  </div>
+
+  <div>
+    <table id="inventoryTable">
+      <thead>
+        <tr>
+          <th>Item Name</th>
+          <th>Lot No</th>
+          <th>Delivery Number</th>
+          <th>Date Received</th>
+          <th>Quantity</th>
+        </tr>
+      </thead>
+
+      <tbody id="inventoryBody">
+      <!-- Inventory items will be displayed here -->
+      </tbody>
+    </table>
+  </div>
+
+<script>
+  function openForm() {
+    document.getElementById("overlay").style.width = "100%";
+    document.getElementById("addForm").style.right = "0";
+  }
+
+  function closeForm() {
+    document.getElementById("overlay").style.width = "0";
+    document.getElementById("addForm").style.right = "-250px";
+  }
+
+  function addItem(event) {
+    event.preventDefault(); // Prevent form submission
+
+    // Your logic to add items would go here
+    // For demo purposes, let's just log the form data
+    const formData = new FormData(document.getElementById("addItemForm"));
+    const item = {};
+
+    for (const pair of formData.entries()) {
+      item[pair[0]] = pair[1];
+    }
+
+    // Add the new item to the inventoryItems array
+    inventoryItems.push(item);
+
+    // Clear the table body and re-render the inventory items
+    const inventoryTable = document.getElementById('inventoryBody');
+    inventoryTable.innerHTML = ''; // Clear table body
+    displayInventoryTable(); // Re-render inventory items in the table
+
+    // Optionally, clear the form fields after submission
+    document.getElementById("addItemForm").reset();
+  }
+
+  // Dummy inventory data (replace this with your actual inventory)
+  const inventoryItems = [
+    { itemName: 'Yum Burger', lotNo: '2351221', deliveryNumber: '04840', dateReceived: '04-01-2023', itemQuantity: 5 },
+    { itemName: 'Chesse Burger', lotNo: '654458', deliveryNumber: '0884065408', dateReceived: '04-01-2023', itemQuantity: 7 },
+    { itemName: 'Coke Float', lotNo: '08749801', deliveryNumber: '0844750140', dateReceived: '04-01-2023', itemQuantity: 4 }
+    // Add more items as needed
+  ];
+
+  // Function to display inventory items in table format
+  function displayInventoryTable() {
+    const inventoryTable = document.getElementById('inventoryBody');
+
+    inventoryItems.forEach(item => {
+      const tableRow = document.createElement('tr');
+      tableRow.innerHTML = `
+        <td>${item.itemName}</td>
+        <td>${item.lotNo}</td>
+        <td>${item.deliveryNumber}</td>
+        <td>${item.dateReceived}</td>
+        <td>${item.itemQuantity}</td>
+      `;
+      inventoryTable.appendChild(tableRow);
+    });
+  }
+
+  // Display inventory items in table format when the page loads
+  window.onload = displayInventoryTable;
+
+  // Display inventory items in table format when the page loads
+  window.onload = function() {
+    displayInventoryTable();
+  };
+</script>
+
+</body>
+</html>

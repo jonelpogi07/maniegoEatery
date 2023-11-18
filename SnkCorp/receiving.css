@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.buttons{
+  padding:10px;
+  display: inline-block;
+  margin: auto;
+}
+
+.buttons a{
+  text-decoration: none;
+}
+
+#backButton{
+  font-size: 15px;
+  width: 150px;
+  height: 25px;
+  border-radius: 15px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+#formButton{
+  font-size: 15px;
+  width: 150px;
+  height: 25px;
+  border-radius: 15px;
+  background-color: #4CAF50;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.7);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.form-popup {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  right: -250px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  transition: 0.5s;
+}
+
+.form-popup h2 {
+  margin-top: 0;
+}
+
+.form-popup label,
+.form-popup input[type="text"],
+.form-popup input[type="number"],
+.form-popup input[type="date"],
+.form-popup button {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 15px;
+}
+
+.form-popup input[type="submit"],
+.form-popup button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.form-popup button[type="button"] {
+  background-color: #f44336;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+th {
+  background-color: #f2f2f2;
+}

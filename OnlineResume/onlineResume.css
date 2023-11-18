@@ -1,10 +1,9 @@
 body {
   font-family: "Arial", sans-serif;
-  background-image: url("resumeImages/background.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-image: url("resumeImages/backgound1.jpg");
+  background-size: small;
   background-position: center;
-  margin:10px;
+  background-repeat: no-repeat;
 }
 
 .myProfile {
@@ -16,11 +15,11 @@ body {
 #profile {
   border-radius: 50%;
   position: relative;
-  bottom: 300px;
+  top: -320px;
   left: 50px;
   width: 350px;
   height: 300px;
-  display: inline;
+  display: inline-block;
 }
 
 h1 {
@@ -65,7 +64,7 @@ h1 {
   color: aqua;
 }
 
-header {
+.name {
   color: white;
   text-align: center;
   padding: 20px;
@@ -76,35 +75,78 @@ h3 {
   background-color: aliceblue;
 }
 
-#date {
-  color: black;
-  background-color: aliceblue;
+#title1{
+  width: 500px;
+  color: hsl(182, 100%, 50%);
+  position: absolute;
+  top: 575px;
+  left: 100px;
+  font-size: 35px;
   display: inline-block;
 }
 
-#title1 {
-  color: hsl(182, 100%, 50%);
-  position: absolute;
-  top: 450px;
-  left: 360px;
-  font-size: 40px;
- 
+.fa-solid.fa-id-card.fa-xl{
+  color: white;
+  text-align: left;
 }
 
-.information {
+.information1{
   border-radius: 50px;
   background-color: hsla(165, 100%, 88%, 0.945);
   font-style: italic;
   position: relative;
   top: 150px;
-  left: -100px;
+  left: -270px;
+  padding: 15px;
+  color: black;
+  height: 390px;
+  width: 400px;
+  display: inline-block; 
+}
+
+th{
+  width: 200px;
+  font-size: 1em;
+  text-align: left;
+  padding: 10px;
+}
+
+td{
+  width: 200px;
+  font-size: 1em;
+  padding: 10px;
+}
+
+#title2{
+  width: 300px;
+  color: hsl(182, 100%, 50%);
+  position: absolute;
+  top: -100px;
+  left: 600px;
+  font-size: 40px;
+  display: inline-block;
+}
+
+.fa-solid.fa-book.fa-xl {
+  color: white;
+  text-align: left;
+}
+
+
+.information2{
+  border-radius: 50px;
+  background-color: hsla(165, 100%, 88%, 0.945);
+  font-style: italic;
+  border: 3px solid black;
+  position: relative;
+  top: -395px;
+  left: 525px;
   font-size: 1.2em;
   padding: 10px;
   color: black;
   height: 250px;
-  width: 350px;
-  float: left;
-  display: block;
+  width: 400px;
+  display: inline-block;
 }
 
 .fa-solid.fa-phone.fa-rotate-90.fa-xl {
@@ -119,49 +161,35 @@ h3 {
   color: black;
 }
 
-.information2 {
+
+#title3{
+  width: 300px;
+  color: hsl(182, 100%, 50%);
+  position: absolute;
+  top: -100px;
+  left: 1150px;
+  font-size: 40px;
+  display: inline-block;
+}
+
+.fa-solid.fa-message.fa-xl{
+  color: white;
+  text-align: left;
+}
+
+.information3{
   border-radius: 50px;
   background-color: hsla(165, 100%, 88%, 0.945);
   font-style: italic;
-  border: 3px solid black;
   position: relative;
-  top: 150px;
-  right: 250px;
+  bottom: 670px;
+  left: 1050px;
   font-size: 1.2em;
   padding: 10px;
   color: black;
   height: 250px;
   width: 350px;
-  float: right;
-  display: block;
-}
-
-.fa-solid.fa-book.fa-xl {
-  color: black;
-  text-align: left;
-}
-
-.information3{
-  width:400px;
-  background-color: aqua;
-  position: relative;
   display: inline-block;
-}
-
-th{
-  
-  width: 200px;
-  font-size: 1em;
-  text-align: left;
-  padding: 10px;
-  background-color: aqua;
-}
-td{
-  
-  width: 200px;
-  font-size: 1em;
-  padding: 10px;
-  background-color: aqua;
 }
 
 #workTitle {
@@ -171,10 +199,11 @@ td{
   position: relative;
   border: 3px solid black;
   font-size: 80px;
+  width: 995px;
   text-align: center;
   position: relative;
-  top: 120px;
-  left: 100px;
+  top: -500px;
+  left: 175px;
   display: inline-block;
 }
 
@@ -190,11 +219,11 @@ td{
   padding: 10px;
   color: white;
   height: auto;
-  width: auto;
+  width: 1200px;
   text-align: left;
   position: relative;
-  top: 100px;
-  left: 5px;
+  top: -500px;
+  left: -50px;
   display: inline-block;
 }
 
@@ -208,7 +237,8 @@ td{
   width: 995px;
   text-align: left;
   position: relative;
-  top: 150px;
+  left: 1025px;
+  top: -450px;
   display: inline-block;
 }
 
@@ -222,7 +252,8 @@ td{
   width: 995px;
   text-align: left;
   position: relative;
-  top: 200px;
+  top: -400px;
+  left: -50px;
   display: inline-block;
 }
 
@@ -236,7 +267,8 @@ td{
   width: 995px;
   text-align: left;
   position: relative;
-  top: 250px;
+  top: -350px;
+  left: 1025px;
   display: inline-block;
 }
 
@@ -250,7 +282,14 @@ td{
   width: 995px;
   text-align: left;
   position: relative;
-  top: 300px;
+  top: -300px;
+  left: -55px;
+  display: inline-block;
+}
+
+#date {
+  color: black;
+  background-color: aliceblue;
   display: inline-block;
 }
 
@@ -261,3 +300,121 @@ td{
 #right {
   float: right;
 }
+
+#titleAbilities{
+  border-radius: 25px;
+  background-color: hsla(165, 100%, 88%, 0.945);
+  font-style: italic;
+  font-size: 40px;
+  width: 450px;
+  text-align: center;
+  position: relative;
+  top: -280px;
+  left: -80px;
+  display: inline-block;
+}
+
+.fa-solid.fa-list.fa-sm{
+  color: white;
+}
+
+#skillList{
+  position: relative;
+  top: -300px;
+  left: -60px;
+  background-color: aquamarine;
+  text-align: left;
+  width: 500px;
+  height: 400px;
+  border-radius: 25px;
+  padding: 25px;
+}
+
+#references{
+  border-radius: 25px;
+  background-color: hsla(165, 100%, 88%, 0.945);
+  font-style: italic;
+  border: 3px solid black;
+  font-size: 40px;
+  width: 500px;
+  text-align: center;
+  position: relative;
+  top: -875px;
+  left: 950px;
+  display: block;
+}
+
+.fa-solid.fa-circle-user.fa-sm{
+  color: white;
+}
+
+#contactReferences{
+  position: relative;
+  top: -880px;
+  left: 1075px;
+  background-color: aquamarine;
+  text-align: left;
+  width: 200px;
+  height: 300px;
+  border-radius: 25px;
+  padding: 25px;
+}
+
+#declaration{
+  color: rgb(54, 161, 255);
+  font-size: 2em;
+  font-style:oblique;
+  position: relative;
+  top: -720px;
+  left: 600px;
+  width: 200px;
+  height: 100px;
+  }
+
+  #declaration::first-letter {
+    font-size: 2em;
+    color: hsl(0, 100%, 50%);
+    display: inline-block;
+  }
+
+  #pDecla{
+    color: hsl(0, 0%, 100%);
+    font-size: 1.5em;
+    width: 800px;
+    text-align: center;
+    position: relative;
+    top: -780px;
+    left: 300px;
+    display: inline-block;
+  }
+  
+  #box{
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+    padding: 15px;
+    background-color: rgb(205, 50, 50);
+    font-size: 3em;
+
+    
+    text-align: center;
+    position: relative;
+    right: -1000px;
+    top: -100px;
+    display: inline-block;
+    animation-name: colorchange,rotate;
+    animation-duration: 18s;
+  }
+  
+  @keyframes colorchange{
+    0%{ background-color: rgb(205, 50, 50)}
+    20%{ background-color: rgb(0, 255, 34)}
+    40%{ background-color: rgb(0, 32, 211)}
+    60%{ background-color: rgb(238, 255, 0)}
+    80%{ background-color: rgb(248, 9, 196)}
+    100%{ background-color: rgb(255, 125, 4)}
+  }
+
+  @keyframes rotate {
+    50%{transform: rotateZ(360deg)}
+  }
